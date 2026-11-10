@@ -1,0 +1,4 @@
+Model,Evaluation_Set,Total_Patients,Testing_Capacity,Selected_Patients,True_Positives,False_Positives,False_Negatives,Precision,Recall
+KNN,Validation,123,36,36,27,9,16,0.75,0.627906976744186
+Logistic Regression,Validation,123,36,36,27,9,16,0.75,0.627906976744186
+Decision Tree,Validation,123,36,36,24,12,19,0.6666666666666666,0.5581395348837209

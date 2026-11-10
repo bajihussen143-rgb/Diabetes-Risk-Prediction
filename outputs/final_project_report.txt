@@ -1,0 +1,96 @@
+
+DIABETES RISK PREDICTION PROJECT
+================================
+
+1. PROJECT OBJECTIVE
+
+Build a machine learning screening-support prototype
+that ranks patients according to predicted diabetes risk.
+
+The clinic can test a maximum of 30% of its daily patients.
+
+2. DATASET AND EVALUATION
+
+Final test patients: 154
+Maximum testing capacity: 46
+Selected patients: 46
+
+3. VALIDATION MODEL COMPARISON
+
+              Model Evaluation_Set  Total_Patients  Testing_Capacity  Selected_Patients  True_Positives  False_Positives  False_Negatives  Precision   Recall
+                KNN     Validation             123                36                 36              27                9               16   0.750000 0.627907
+Logistic Regression     Validation             123                36                 36              27                9               16   0.750000 0.627907
+      Decision Tree     Validation             123                36                 36              24               12               19   0.666667 0.558140
+
+Models were compared using validation data.
+
+Business priorities:
+1. Maximize recall.
+2. Maximize precision.
+3. Minimize false negatives.
+
+4. SELECTED MODEL
+
+Selected model: KNN
+
+Selection was based on validation results.
+
+5. FINAL TEST CAPACITY RESULTS
+
+Precision: 0.6522
+Recall: 0.5556
+
+True positives: 30
+False positives: 16
+True negatives: 84
+False negatives: 24
+
+6. BUSINESS INTERPRETATION
+
+The selected model ranked patients by predicted diabetes risk.
+
+It selected 46 out of
+154 test patients for screening.
+
+Among the selected patients:
+- 30 were actual diabetic patients.
+- 16 were actual non-diabetic patients.
+
+Among the patients not selected:
+- 24 were actual diabetic patients.
+- 84 were actual non-diabetic patients.
+
+7. IMPORTANT METHODOLOGICAL NOTE
+
+The model was selected using validation results and then
+refitted on the combined training and validation data.
+
+The final test partition was used for the final capacity
+evaluation. Earlier baseline and threshold-tuning experiments
+also evaluated this same partition, so this result should not
+be described as a completely independent external validation.
+
+A fresh holdout dataset or nested cross-validation would
+provide a stronger estimate of generalization performance.
+
+8. CONCLUSION
+
+The selected model is the best candidate according to the
+specified validation-based selection process.
+
+Its final test performance is reported under a strict
+30% patient-selection capacity.
+
+Further independent validation and improvement are required
+before any real-world clinical use.
+
+9. MEDICAL DISCLAIMER
+
+This is an educational machine learning project.
+
+It is not a medically validated diagnostic system.
+It must not replace professional medical advice,
+clinical testing, or clinician decisions.
+
+All real-world screening decisions require appropriate
+clinical validation and qualified medical supervision.

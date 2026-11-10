@@ -1,0 +1,370 @@
+Original_Row_Index,Predicted_Risk,Actual_Outcome,Risk_Rank,Selected_For_Testing,Model,Evaluation_Set
+696,1.0,1,1,True,KNN,Validation
+155,1.0,1,2,True,KNN,Validation
+661,1.0,1,3,True,KNN,Validation
+359,1.0,1,4,True,KNN,Validation
+22,1.0,1,5,True,KNN,Validation
+12,1.0,0,6,True,KNN,Validation
+360,0.8,1,7,True,KNN,Validation
+221,0.8,1,8,True,KNN,Validation
+159,0.8,1,9,True,KNN,Validation
+220,0.8,1,10,True,KNN,Validation
+487,0.8,0,11,True,KNN,Validation
+681,0.8,1,12,True,KNN,Validation
+186,0.8,1,13,True,KNN,Validation
+588,0.8,1,14,True,KNN,Validation
+388,0.6,1,15,True,KNN,Validation
+468,0.6,1,16,True,KNN,Validation
+0,0.6,1,17,True,KNN,Validation
+26,0.6,1,18,True,KNN,Validation
+475,0.6,0,19,True,KNN,Validation
+261,0.6,1,20,True,KNN,Validation
+295,0.6,0,21,True,KNN,Validation
+285,0.6,0,22,True,KNN,Validation
+114,0.6,1,23,True,KNN,Validation
+209,0.6,1,24,True,KNN,Validation
+214,0.6,1,25,True,KNN,Validation
+338,0.6,1,26,True,KNN,Validation
+523,0.6,1,27,True,KNN,Validation
+739,0.6,1,28,True,KNN,Validation
+711,0.6,0,29,True,KNN,Validation
+708,0.6,1,30,True,KNN,Validation
+317,0.6,1,31,True,KNN,Validation
+36,0.6,0,32,True,KNN,Validation
+107,0.6,0,33,True,KNN,Validation
+369,0.6,1,34,True,KNN,Validation
+675,0.6,1,35,True,KNN,Validation
+281,0.6,0,36,True,KNN,Validation
+56,0.6,1,37,False,KNN,Validation
+286,0.6,0,38,False,KNN,Validation
+539,0.4,1,39,False,KNN,Validation
+231,0.4,1,40,False,KNN,Validation
+405,0.4,0,41,False,KNN,Validation
+420,0.4,0,42,False,KNN,Validation
+110,0.4,1,43,False,KNN,Validation
+201,0.4,0,44,False,KNN,Validation
+577,0.4,1,45,False,KNN,Validation
+283,0.4,1,46,False,KNN,Validation
+510,0.4,1,47,False,KNN,Validation
+126,0.4,0,48,False,KNN,Validation
+714,0.4,0,49,False,KNN,Validation
+542,0.4,1,50,False,KNN,Validation
+456,0.4,0,51,False,KNN,Validation
+30,0.4,0,52,False,KNN,Validation
+121,0.4,0,53,False,KNN,Validation
+478,0.4,0,54,False,KNN,Validation
+222,0.2,0,55,False,KNN,Validation
+452,0.2,0,56,False,KNN,Validation
+9,0.2,1,57,False,KNN,Validation
+113,0.2,0,58,False,KNN,Validation
+518,0.2,0,59,False,KNN,Validation
+371,0.2,0,60,False,KNN,Validation
+141,0.2,0,61,False,KNN,Validation
+299,0.2,0,62,False,KNN,Validation
+59,0.2,0,63,False,KNN,Validation
+431,0.2,0,64,False,KNN,Validation
+731,0.2,1,65,False,KNN,Validation
+65,0.2,0,66,False,KNN,Validation
+37,0.2,1,67,False,KNN,Validation
+509,0.2,0,68,False,KNN,Validation
+29,0.2,0,69,False,KNN,Validation
+134,0.2,0,70,False,KNN,Validation
+666,0.2,1,71,False,KNN,Validation
+726,0.2,0,72,False,KNN,Validation
+642,0.2,1,73,False,KNN,Validation
+555,0.2,0,74,False,KNN,Validation
+479,0.2,0,75,False,KNN,Validation
+720,0.2,0,76,False,KNN,Validation
+377,0.2,0,77,False,KNN,Validation
+15,0.2,1,78,False,KNN,Validation
+350,0.2,0,79,False,KNN,Validation
+334,0.0,0,80,False,KNN,Validation
+457,0.0,0,81,False,KNN,Validation
+368,0.0,0,82,False,KNN,Validation
+610,0.0,0,83,False,KNN,Validation
+385,0.0,0,84,False,KNN,Validation
+438,0.0,0,85,False,KNN,Validation
+514,0.0,0,86,False,KNN,Validation
+511,0.0,0,87,False,KNN,Validation
+476,0.0,1,88,False,KNN,Validation
+106,0.0,0,89,False,KNN,Validation
+382,0.0,0,90,False,KNN,Validation
+738,0.0,0,91,False,KNN,Validation
+282,0.0,0,92,False,KNN,Validation
+727,0.0,0,93,False,KNN,Validation
+624,0.0,0,94,False,KNN,Validation
+142,0.0,0,95,False,KNN,Validation
+70,0.0,1,96,False,KNN,Validation
+253,0.0,0,97,False,KNN,Validation
+677,0.0,0,98,False,KNN,Validation
+529,0.0,0,99,False,KNN,Validation
+135,0.0,0,100,False,KNN,Validation
+572,0.0,0,101,False,KNN,Validation
+196,0.0,0,102,False,KNN,Validation
+149,0.0,0,103,False,KNN,Validation
+157,0.0,0,104,False,KNN,Validation
+318,0.0,0,105,False,KNN,Validation
+316,0.0,0,106,False,KNN,Validation
+553,0.0,0,107,False,KNN,Validation
+631,0.0,0,108,False,KNN,Validation
+68,0.0,0,109,False,KNN,Validation
+747,0.0,0,110,False,KNN,Validation
+652,0.0,0,111,False,KNN,Validation
+173,0.0,0,112,False,KNN,Validation
+617,0.0,0,113,False,KNN,Validation
+544,0.0,0,114,False,KNN,Validation
+508,0.0,0,115,False,KNN,Validation
+52,0.0,0,116,False,KNN,Validation
+92,0.0,0,117,False,KNN,Validation
+741,0.0,0,118,False,KNN,Validation
+79,0.0,0,119,False,KNN,Validation
+202,0.0,0,120,False,KNN,Validation
+600,0.0,0,121,False,KNN,Validation
+262,0.0,0,122,False,KNN,Validation
+55,0.0,0,123,False,KNN,Validation
+661,0.9708845411968626,1,1,True,Logistic Regression,Validation
+159,0.9663086038276113,1,2,True,Logistic Regression,Validation
+487,0.9548835687610692,0,3,True,Logistic Regression,Validation
+22,0.9529946327143631,1,4,True,Logistic Regression,Validation
+56,0.9132310110769828,1,5,True,Logistic Regression,Validation
+155,0.9082905754997601,1,6,True,Logistic Regression,Validation
+359,0.9065868303229939,1,7,True,Logistic Regression,Validation
+209,0.8864533417657672,1,8,True,Logistic Regression,Validation
+681,0.8845696322565436,1,9,True,Logistic Regression,Validation
+675,0.8679825281403601,1,10,True,Logistic Regression,Validation
+588,0.8669224930710623,1,11,True,Logistic Regression,Validation
+186,0.8508679873243968,1,12,True,Logistic Regression,Validation
+360,0.8362439076934871,1,13,True,Logistic Regression,Validation
+220,0.779370665991829,1,14,True,Logistic Regression,Validation
+338,0.7648961876712886,1,15,True,Logistic Regression,Validation
+708,0.7597017331518213,1,16,True,Logistic Regression,Validation
+26,0.7574455602546504,1,17,True,Logistic Regression,Validation
+114,0.740870541537727,1,18,True,Logistic Regression,Validation
+295,0.7399038043300209,0,19,True,Logistic Regression,Validation
+231,0.7378459432566801,1,20,True,Logistic Regression,Validation
+317,0.7304303204559295,1,21,True,Logistic Regression,Validation
+0,0.7021499231546104,1,22,True,Logistic Regression,Validation
+221,0.6937831097904129,1,23,True,Logistic Regression,Validation
+12,0.6870239314462564,0,24,True,Logistic Regression,Validation
+286,0.6846757637672903,0,25,True,Logistic Regression,Validation
+110,0.6698401547605355,1,26,True,Logistic Regression,Validation
+283,0.6281836834345756,1,27,True,Logistic Regression,Validation
+523,0.6200514088535901,1,28,True,Logistic Regression,Validation
+36,0.6131892413318082,0,29,True,Logistic Regression,Validation
+696,0.6047199962380837,1,30,True,Logistic Regression,Validation
+666,0.5875055874751027,1,31,True,Logistic Regression,Validation
+405,0.5788376742697678,0,32,True,Logistic Regression,Validation
+281,0.5712382377228395,0,33,True,Logistic Regression,Validation
+388,0.5392575720399361,1,34,True,Logistic Regression,Validation
+126,0.5367903726336555,0,35,True,Logistic Regression,Validation
+201,0.5013470612765999,0,36,True,Logistic Regression,Validation
+642,0.4812587391559801,1,37,False,Logistic Regression,Validation
+577,0.4783150513254676,1,38,False,Logistic Regression,Validation
+420,0.47225785553457245,0,39,False,Logistic Regression,Validation
+539,0.46008567322495453,1,40,False,Logistic Regression,Validation
+107,0.4455130565104755,0,41,False,Logistic Regression,Validation
+261,0.42012367305640413,1,42,False,Logistic Regression,Validation
+285,0.4126375981887592,0,43,False,Logistic Regression,Validation
+30,0.4039820511036234,0,44,False,Logistic Regression,Validation
+371,0.40040649920370436,0,45,False,Logistic Regression,Validation
+456,0.40013757439955433,0,46,False,Logistic Regression,Validation
+282,0.39554311891313976,0,47,False,Logistic Regression,Validation
+9,0.37451683201063685,1,48,False,Logistic Regression,Validation
+92,0.3623426318460359,0,49,False,Logistic Regression,Validation
+747,0.3479764509853519,0,50,False,Logistic Regression,Validation
+479,0.33128511932972715,0,51,False,Logistic Regression,Validation
+652,0.3234698613216279,0,52,False,Logistic Regression,Validation
+141,0.32269978189865545,0,53,False,Logistic Regression,Validation
+542,0.31495024522791126,1,54,False,Logistic Regression,Validation
+711,0.31381594146972475,0,55,False,Logistic Regression,Validation
+727,0.31064557068221466,0,56,False,Logistic Regression,Validation
+37,0.30897363068985445,1,57,False,Logistic Regression,Validation
+318,0.30463868404358574,0,58,False,Logistic Regression,Validation
+214,0.29964865557347176,1,59,False,Logistic Regression,Validation
+135,0.2899446110510386,0,60,False,Logistic Regression,Validation
+468,0.27857269012538466,1,61,False,Logistic Regression,Validation
+29,0.26636013975814093,0,62,False,Logistic Regression,Validation
+369,0.26486624749672294,1,63,False,Logistic Regression,Validation
+509,0.2641987187196729,0,64,False,Logistic Regression,Validation
+121,0.2530706093410646,0,65,False,Logistic Regression,Validation
+739,0.25174901194091914,1,66,False,Logistic Regression,Validation
+475,0.2454740703840456,0,67,False,Logistic Regression,Validation
+726,0.24205906135738076,0,68,False,Logistic Regression,Validation
+59,0.23971594351244876,0,69,False,Logistic Regression,Validation
+299,0.23614013434804032,0,70,False,Logistic Regression,Validation
+478,0.23447934461335831,0,71,False,Logistic Regression,Validation
+350,0.22927201166824188,0,72,False,Logistic Regression,Validation
+173,0.215160451724234,0,73,False,Logistic Regression,Validation
+70,0.19255216102886466,1,74,False,Logistic Regression,Validation
+738,0.18795241391944775,0,75,False,Logistic Regression,Validation
+142,0.1833294565666961,0,76,False,Logistic Regression,Validation
+731,0.1832726969713398,1,77,False,Logistic Regression,Validation
+555,0.18218191337319162,0,78,False,Logistic Regression,Validation
+476,0.16872740571092917,1,79,False,Logistic Regression,Validation
+572,0.16656867993103489,0,80,False,Logistic Regression,Validation
+741,0.1657797590113853,0,81,False,Logistic Regression,Validation
+222,0.16547360132073352,0,82,False,Logistic Regression,Validation
+15,0.15817750471953776,1,83,False,Logistic Regression,Validation
+518,0.15748777421122634,0,84,False,Logistic Regression,Validation
+610,0.14725708715182861,0,85,False,Logistic Regression,Validation
+452,0.14637231424219985,0,86,False,Logistic Regression,Validation
+510,0.14160440562488427,1,87,False,Logistic Regression,Validation
+377,0.13512091914984015,0,88,False,Logistic Regression,Validation
+262,0.12949174074268097,0,89,False,Logistic Regression,Validation
+202,0.11915303960719877,0,90,False,Logistic Regression,Validation
+511,0.11848585083435074,0,91,False,Logistic Regression,Validation
+624,0.11460177927032027,0,92,False,Logistic Regression,Validation
+382,0.11365453466221496,0,93,False,Logistic Regression,Validation
+157,0.11213905735557439,0,94,False,Logistic Regression,Validation
+677,0.10874283693363464,0,95,False,Logistic Regression,Validation
+631,0.1087312960249627,0,96,False,Logistic Regression,Validation
+508,0.104308150585985,0,97,False,Logistic Regression,Validation
+431,0.09749630484870557,0,98,False,Logistic Regression,Validation
+65,0.09609335297837265,0,99,False,Logistic Regression,Validation
+529,0.09222461237236966,0,100,False,Logistic Regression,Validation
+714,0.08951247558860367,0,101,False,Logistic Regression,Validation
+385,0.08707693897676098,0,102,False,Logistic Regression,Validation
+79,0.08367181463384393,0,103,False,Logistic Regression,Validation
+253,0.07982483685244252,0,104,False,Logistic Regression,Validation
+113,0.07818926878329828,0,105,False,Logistic Regression,Validation
+457,0.07748527153790384,0,106,False,Logistic Regression,Validation
+600,0.06901314587699983,0,107,False,Logistic Regression,Validation
+544,0.06792940797939521,0,108,False,Logistic Regression,Validation
+514,0.06574371717900898,0,109,False,Logistic Regression,Validation
+553,0.06561212362106603,0,110,False,Logistic Regression,Validation
+196,0.05284013623494865,0,111,False,Logistic Regression,Validation
+52,0.05261750136376694,0,112,False,Logistic Regression,Validation
+720,0.050753125724739015,0,113,False,Logistic Regression,Validation
+134,0.04368185295544455,0,114,False,Logistic Regression,Validation
+334,0.040039372396809735,0,115,False,Logistic Regression,Validation
+149,0.03845015990171462,0,116,False,Logistic Regression,Validation
+368,0.03152597834398217,0,117,False,Logistic Regression,Validation
+316,0.03038319863005327,0,118,False,Logistic Regression,Validation
+68,0.026488631237115694,0,119,False,Logistic Regression,Validation
+438,0.017451886839821115,0,120,False,Logistic Regression,Validation
+55,0.01682278149897119,0,121,False,Logistic Regression,Validation
+106,0.015468101695920717,0,122,False,Logistic Regression,Validation
+617,0.010865042539104138,0,123,False,Logistic Regression,Validation
+221,1.0,1,1,True,Decision Tree,Validation
+26,1.0,1,2,True,Decision Tree,Validation
+201,1.0,0,3,True,Decision Tree,Validation
+295,1.0,0,4,True,Decision Tree,Validation
+231,1.0,1,5,True,Decision Tree,Validation
+209,0.8873239436619719,1,6,True,Decision Tree,Validation
+114,0.8873239436619719,1,7,True,Decision Tree,Validation
+283,0.8873239436619719,1,8,True,Decision Tree,Validation
+487,0.8873239436619719,0,9,True,Decision Tree,Validation
+696,0.8873239436619719,1,10,True,Decision Tree,Validation
+220,0.8873239436619719,1,11,True,Decision Tree,Validation
+675,0.8873239436619719,1,12,True,Decision Tree,Validation
+359,0.8873239436619719,1,13,True,Decision Tree,Validation
+317,0.8873239436619719,1,14,True,Decision Tree,Validation
+110,0.8873239436619719,1,15,True,Decision Tree,Validation
+286,0.8873239436619719,0,16,True,Decision Tree,Validation
+588,0.8873239436619719,1,17,True,Decision Tree,Validation
+56,0.8873239436619719,1,18,True,Decision Tree,Validation
+22,0.8873239436619719,1,19,True,Decision Tree,Validation
+661,0.8873239436619719,1,20,True,Decision Tree,Validation
+681,0.8873239436619719,1,21,True,Decision Tree,Validation
+708,0.8873239436619719,1,22,True,Decision Tree,Validation
+360,0.8873239436619719,1,23,True,Decision Tree,Validation
+186,0.8873239436619719,1,24,True,Decision Tree,Validation
+159,0.8873239436619719,1,25,True,Decision Tree,Validation
+214,0.6792452830188679,1,26,True,Decision Tree,Validation
+282,0.6792452830188679,0,27,True,Decision Tree,Validation
+711,0.6792452830188679,0,28,True,Decision Tree,Validation
+479,0.6792452830188679,0,29,True,Decision Tree,Validation
+30,0.6792452830188679,0,30,True,Decision Tree,Validation
+523,0.6792452830188679,1,31,True,Decision Tree,Validation
+29,0.6792452830188679,0,32,True,Decision Tree,Validation
+281,0.6792452830188679,0,33,True,Decision Tree,Validation
+539,0.6792452830188679,1,34,True,Decision Tree,Validation
+126,0.6792452830188679,0,35,True,Decision Tree,Validation
+202,0.6792452830188679,0,36,True,Decision Tree,Validation
+37,0.5,1,37,False,Decision Tree,Validation
+747,0.5,0,38,False,Decision Tree,Validation
+542,0.5,1,39,False,Decision Tree,Validation
+107,0.41935483870967744,0,40,False,Decision Tree,Validation
+456,0.41935483870967744,0,41,False,Decision Tree,Validation
+36,0.41935483870967744,0,42,False,Decision Tree,Validation
+12,0.41935483870967744,0,43,False,Decision Tree,Validation
+642,0.41935483870967744,1,44,False,Decision Tree,Validation
+0,0.41935483870967744,1,45,False,Decision Tree,Validation
+338,0.41935483870967744,1,46,False,Decision Tree,Validation
+261,0.41935483870967744,1,47,False,Decision Tree,Validation
+262,0.4,0,48,False,Decision Tree,Validation
+173,0.4,0,49,False,Decision Tree,Validation
+420,0.4,0,50,False,Decision Tree,Validation
+405,0.4,0,51,False,Decision Tree,Validation
+377,0.4,0,52,False,Decision Tree,Validation
+476,0.4,1,53,False,Decision Tree,Validation
+9,0.2857142857142857,1,54,False,Decision Tree,Validation
+135,0.2857142857142857,0,55,False,Decision Tree,Validation
+468,0.2857142857142857,1,56,False,Decision Tree,Validation
+369,0.2857142857142857,1,57,False,Decision Tree,Validation
+726,0.2222222222222222,0,58,False,Decision Tree,Validation
+382,0.2222222222222222,0,59,False,Decision Tree,Validation
+155,0.2222222222222222,1,60,False,Decision Tree,Validation
+739,0.1282051282051282,1,61,False,Decision Tree,Validation
+510,0.1282051282051282,1,62,False,Decision Tree,Validation
+92,0.1282051282051282,0,63,False,Decision Tree,Validation
+141,0.1282051282051282,0,64,False,Decision Tree,Validation
+65,0.1282051282051282,0,65,False,Decision Tree,Validation
+714,0.1282051282051282,0,66,False,Decision Tree,Validation
+431,0.1282051282051282,0,67,False,Decision Tree,Validation
+720,0.1282051282051282,0,68,False,Decision Tree,Validation
+518,0.1282051282051282,0,69,False,Decision Tree,Validation
+15,0.1282051282051282,1,70,False,Decision Tree,Validation
+318,0.09090909090909091,0,71,False,Decision Tree,Validation
+59,0.09090909090909091,0,72,False,Decision Tree,Validation
+572,0.09090909090909091,0,73,False,Decision Tree,Validation
+652,0.09090909090909091,0,74,False,Decision Tree,Validation
+631,0.09090909090909091,0,75,False,Decision Tree,Validation
+452,0.09090909090909091,0,76,False,Decision Tree,Validation
+121,0.09090909090909091,0,77,False,Decision Tree,Validation
+253,0.09090909090909091,0,78,False,Decision Tree,Validation
+385,0.03076923076923077,0,79,False,Decision Tree,Validation
+113,0.03076923076923077,0,80,False,Decision Tree,Validation
+610,0.03076923076923077,0,81,False,Decision Tree,Validation
+334,0.03076923076923077,0,82,False,Decision Tree,Validation
+457,0.03076923076923077,0,83,False,Decision Tree,Validation
+738,0.03076923076923077,0,84,False,Decision Tree,Validation
+106,0.03076923076923077,0,85,False,Decision Tree,Validation
+368,0.03076923076923077,0,86,False,Decision Tree,Validation
+350,0.03076923076923077,0,87,False,Decision Tree,Validation
+134,0.03076923076923077,0,88,False,Decision Tree,Validation
+438,0.03076923076923077,0,89,False,Decision Tree,Validation
+624,0.03076923076923077,0,90,False,Decision Tree,Validation
+142,0.03076923076923077,0,91,False,Decision Tree,Validation
+617,0.03076923076923077,0,92,False,Decision Tree,Validation
+544,0.03076923076923077,0,93,False,Decision Tree,Validation
+741,0.03076923076923077,0,94,False,Decision Tree,Validation
+68,0.03076923076923077,0,95,False,Decision Tree,Validation
+553,0.03076923076923077,0,96,False,Decision Tree,Validation
+157,0.03076923076923077,0,97,False,Decision Tree,Validation
+508,0.03076923076923077,0,98,False,Decision Tree,Validation
+371,0.03076923076923077,0,99,False,Decision Tree,Validation
+600,0.03076923076923077,0,100,False,Decision Tree,Validation
+677,0.03076923076923077,0,101,False,Decision Tree,Validation
+514,0.03076923076923077,0,102,False,Decision Tree,Validation
+70,0.03076923076923077,1,103,False,Decision Tree,Validation
+577,0.03076923076923077,1,104,False,Decision Tree,Validation
+149,0.03076923076923077,0,105,False,Decision Tree,Validation
+196,0.03076923076923077,0,106,False,Decision Tree,Validation
+731,0.03076923076923077,1,107,False,Decision Tree,Validation
+79,0.03076923076923077,0,108,False,Decision Tree,Validation
+55,0.03076923076923077,0,109,False,Decision Tree,Validation
+222,0.0,0,110,False,Decision Tree,Validation
+727,0.0,0,111,False,Decision Tree,Validation
+285,0.0,0,112,False,Decision Tree,Validation
+388,0.0,1,113,False,Decision Tree,Validation
+478,0.0,0,114,False,Decision Tree,Validation
+529,0.0,0,115,False,Decision Tree,Validation
+511,0.0,0,116,False,Decision Tree,Validation
+475,0.0,0,117,False,Decision Tree,Validation
+666,0.0,1,118,False,Decision Tree,Validation
+316,0.0,0,119,False,Decision Tree,Validation
+509,0.0,0,120,False,Decision Tree,Validation
+555,0.0,0,121,False,Decision Tree,Validation
+52,0.0,0,122,False,Decision Tree,Validation
+299,0.0,0,123,False,Decision Tree,Validation

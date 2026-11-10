@@ -1,0 +1,7 @@
+WINNING MODEL SELECTION
+=======================
+Model: KNN
+Selection basis: Validation results
+Final test precision: 0.6522
+Final test recall: 0.5556
+Final test false negatives: 24
