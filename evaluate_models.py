@@ -255,7 +255,6 @@ def main():
             CONFUSION_DIR
         )
 
-        print("\n========== STEP 7 COMPLETED ==========")
 
     except Exception as error:
 

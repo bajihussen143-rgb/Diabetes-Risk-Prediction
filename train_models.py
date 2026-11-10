@@ -154,7 +154,6 @@ def main():
         print("\nTraining records:", X_train.shape)
         print("Testing records:", X_test.shape)
 
-        print("\n========== STEP 6 COMPLETED ==========")
 
     except Exception as error:
 

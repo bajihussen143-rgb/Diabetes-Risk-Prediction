@@ -115,7 +115,6 @@ def main():
 
         check_distribution(y_test, "Testing dataset")
 
-        print("\n========== STEP 4 COMPLETED ==========")
 
     except Exception as error:
 

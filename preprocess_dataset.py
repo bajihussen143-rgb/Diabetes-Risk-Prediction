@@ -143,7 +143,6 @@ def main():
 
         print(X_train_scaled[:5])
 
-        print("\n========== STEP 5 COMPLETED ==========")
 
     except Exception as error:
 

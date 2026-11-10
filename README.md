@@ -266,3 +266,46 @@ All 7 project tests passed during development.
 ## 13. Disclaimer
 
 This project is developed for educational and machine-learning learning purposes only. Its predictions are not medical diagnoses or treatment recommendations. Real-world deployment would require independent clinical validation, appropriate confirmatory testing, privacy safeguards, and qualified healthcare professional oversight.
+
+## Making a Patient Prediction
+
+The project includes a saved machine learning pipeline and an interactive prediction script.
+
+### Run the prediction system
+
+From the project root directory, activate your virtual environment and run:
+
+```bash
+python predict_diabetes.py
+```
+
+Enter the following patient features when prompted:
+
+1. Pregnancies
+2. Glucose
+3. BloodPressure
+4. SkinThickness
+5. Insulin
+6. BMI
+7. DiabetesPedigreeFunction
+8. Age
+
+The system loads the saved KNN model and displays a model-estimated probability.
+
+### Input Validation
+
+- Negative values are rejected.
+- Pregnancies must be a whole number.
+- Zero values are rejected for Glucose, BloodPressure, SkinThickness, Insulin, and BMI because these represent missing measurements in the training dataset.
+
+### Run Automated Tests
+
+```bash
+python -m pytest -v
+```
+
+The test suite checks model loading, prediction output, patient input structure, and invalid input handling.
+
+### Model Safety Disclaimer
+
+This project is an educational machine learning prototype. Its output is not a medically validated risk estimate or diagnosis. It must not be used to make clinical decisions. Real-world use requires independent clinical validation, confirmatory testing, and qualified healthcare professional oversight.

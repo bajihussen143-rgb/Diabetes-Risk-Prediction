@@ -301,7 +301,6 @@ def main():
 
         print("\nResults saved inside outputs folder.")
 
-        print("\n========== STEP 8 COMPLETED ==========")
 
     except Exception as error:
 

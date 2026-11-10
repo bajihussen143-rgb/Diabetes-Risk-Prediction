@@ -1,7 +1,9 @@
 
 import math
-import pandas as pd
 from pathlib import Path
+
+import joblib
+import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
@@ -21,6 +23,9 @@ from sklearn.metrics import precision_score, recall_score
 
 DATASET_PATH = Path("data/diabetes_cleaned.csv")
 OUTPUT_DIR = Path("outputs")
+
+MODEL_DIR = Path("models")
+MODEL_PATH = MODEL_DIR / "diabetes_risk_model.joblib"
 
 CAPACITY = 0.30
 RANDOM_STATE = 42
@@ -44,6 +49,14 @@ def load_validation_results():
 
     if results.empty:
         raise ValueError("Validation results are empty.")
+
+    if "Evaluation_Set" not in results.columns:
+        raise ValueError("Evaluation_Set column is missing.")
+
+    if not (results["Evaluation_Set"] == "Validation").all():
+        raise ValueError(
+            "Model selection must use validation results only."
+        )
 
     return results
 
@@ -74,7 +87,10 @@ def select_winner(results):
     print("Model:", winner["Model"])
     print("Validation recall:", round(winner["Recall"], 4))
     print("Validation precision:", round(winner["Precision"], 4))
-    print("Validation false negatives:", int(winner["False_Negatives"]))
+    print(
+        "Validation false negatives:",
+        int(winner["False_Negatives"])
+    )
 
     print(
         "\nSelection is based on validation results only. "
@@ -113,16 +129,6 @@ def split_data(X, y):
         test_size=0.20,
         random_state=RANDOM_STATE,
         stratify=y
-    )
-
-    # Validation split is used for model selection.
-    # The selected model will later be retrained on all 80%.
-    X_train, X_val, y_train, y_val = train_test_split(
-        X_train_full,
-        y_train_full,
-        test_size=0.20,
-        random_state=RANDOM_STATE,
-        stratify=y_train_full
     )
 
     return X_train_full, X_test, y_train_full, y_test
@@ -176,13 +182,13 @@ def evaluate_final_model(
     y_test
 ):
 
-    # Retrain using the complete 80% training partition
+    # Train on the complete 80% training partition
     model.fit(X_train_full, y_train_full)
 
-    # Predict risk probabilities for test patients
+    # Predict risk probabilities
     probabilities = model.predict_proba(X_test)[:, 1]
 
-    # Strictly enforce the 30% capacity limit
+    # Enforce the strict 30% screening capacity
     capacity = math.floor(len(X_test) * CAPACITY)
 
     # Rank patients from highest to lowest predicted risk
@@ -221,13 +227,16 @@ def evaluate_final_model(
         actual, selected, zero_division=0
     )
 
+    # Calculate rank for each patient
+    risk_ranks = ranked_indices.argsort() + 1
+
     # Save final test patient rankings
     patient_results = pd.DataFrame({
 
         "Original_Row_Index": X_test.index,
         "Predicted_Risk": probabilities,
         "Actual_Outcome": actual,
-        "Risk_Rank": ranked_indices.argsort() + 1,
+        "Risk_Rank": risk_ranks,
         "Selected_For_Testing": selected
 
     }, index=X_test.index)
@@ -256,24 +265,41 @@ def evaluate_final_model(
 
 
 # ----------------------------------
+# SAVE TRAINED MODEL
+# ----------------------------------
+
+def save_model(model):
+
+    MODEL_DIR.mkdir(parents=True, exist_ok=True)
+
+    joblib.dump(model, MODEL_PATH)
+
+    print("\n========== MODEL SAVED ==========")
+    print("Model path:", MODEL_PATH)
+
+
+# ----------------------------------
 # MAIN FUNCTION
 # ----------------------------------
 
 def main():
 
-    OUTPUT_DIR.mkdir(exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
     # Step 1: Select model using validation results
     validation_results = load_validation_results()
+
     winning_model_name = select_winner(validation_results)
 
     # Step 2: Load dataset and reproduce the same split
     df = load_dataset()
+
     X, y = prepare_data(df)
 
     X_train_full, X_test, y_train_full, y_test = split_data(X, y)
 
-    # Step 3: Create and retrieve the selected model
+    # Step 3: Create models and retrieve the winner
     models = create_models()
 
     if winning_model_name not in models:
@@ -283,7 +309,7 @@ def main():
 
     winning_model = models[winning_model_name]
 
-    # Step 4: Evaluate the selected model on the final test partition
+    # Step 4: Evaluate the selected model on final test data
     final_summary, patient_results = evaluate_final_model(
         winning_model_name,
         winning_model,
@@ -293,19 +319,22 @@ def main():
         y_test
     )
 
-    # Save final test metrics
+    # Step 5: Save the complete fitted pipeline
+    save_model(winning_model)
+
+    # Step 6: Save final test metrics
     pd.DataFrame([final_summary]).to_csv(
         OUTPUT_DIR / "final_test_results.csv",
         index=False
     )
 
-    # Save final test patient rankings
+    # Step 7: Save final test patient rankings
     patient_results.to_csv(
         OUTPUT_DIR / "final_test_patient_rankings.csv",
         index=False
     )
 
-    # Save winning model details
+    # Step 8: Save winning model details
     with open(
         OUTPUT_DIR / "winning_model.txt",
         "w",
@@ -316,28 +345,37 @@ def main():
         file.write("=======================\n")
         file.write(f"Model: {winning_model_name}\n")
         file.write("Selection basis: Validation results\n")
-        file.write(f"Final test precision: {final_summary['Precision']:.4f}\n")
-        file.write(f"Final test recall: {final_summary['Recall']:.4f}\n")
+        file.write(
+            f"Final test precision: "
+            f"{final_summary['Precision']:.4f}\n"
+        )
+        file.write(
+            f"Final test recall: "
+            f"{final_summary['Recall']:.4f}\n"
+        )
         file.write(
             f"Final test false negatives: "
             f"{final_summary['False_Negatives']}\n"
         )
 
-    # Display final test results
+    # Step 9: Display final results
     print("\n========== FINAL TEST EVALUATION ==========")
 
     for key, value in final_summary.items():
         print(f"{key}: {value}")
 
     print("\nFiles created:")
+    print("models/diabetes_risk_model.joblib")
     print("outputs/winning_model.txt")
     print("outputs/final_test_results.csv")
     print("outputs/final_test_patient_rankings.csv")
 
 
 if __name__ == "__main__":
+
     try:
         main()
+
     except Exception as error:
         print("\nERROR:", error)
         raise
